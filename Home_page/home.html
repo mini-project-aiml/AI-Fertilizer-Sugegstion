@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fertilizer Portal - Dashboard</title>
+  <link rel="stylesheet" href="home.css" />
+  <script src="home.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 🌟 NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <button class="menu-btn" id="openSidebar">☰</button>
+      <h2 class="nav-logo">🌱 Fertilizer Portal</h2>
+    </div>
+
+    <div class="nav-right">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+
+  <!-- 🌟 SIDEBAR MENU -->
+  <aside id="sidebar" class="sidebar">
+    <button class="close-btn" id="closeSidebar">✕</button>
+
+    <ul class="sidebar-links">
+      <li onclick="location.href='home.html'">🏡 Home</li>
+      <li onclick="location.href='features/soil-analysis.html'">🧪 Soil Analysis</li>
+      <li onclick="location.href='features/fertilizer-guide.html'">🌾 Fertilizer Guide</li>
+      <li onclick="location.href='features/weather.html'">☁️ Weather Advisor</li>
+      <li onclick="location.href='features/Info_soil.html'">🟫 Soil Info</li>
+      <li onclick="location.href='features/community.html'">👥 Community</li>
+    </ul>
+  </aside>
+
+
+  <!-- 🌟 MAIN CONTENT -->
+  <main class="home-main">
+    <h1 id="welcomeText" class="greeting-text"></h1>
+    <p class="sub-greeting">
+      Welcome to your smart farming portal 🌾  
+      We guide you in choosing the right fertilizers.
+    </p>
+  </main>
+
+
+  <!-- 🌟 FEATURES SECTION -->
+  <section class="features-section" id="features">
+    <h2 class="features-title">Our Smart Farming Features 🌱</h2>
+
+    <div class="features-container">
+
+      <div class="feature-box fade-up" onclick="location.href='features/soil-analysis.html'">
+        <img src="soil_en.png" class="feature-icon" />
+        <h3>Soil Enrichment</h3>
+        <p>Improve soil nutrients and boost crop yield.</p>
+      </div>
+
+      <div class="feature-box fade-up" onclick="location.href='features/fertilizer-guide.html'">
+        <img src="fertilizer.png" class="feature-icon" />
+        <h3>Fertilizer Guide</h3>
+        <p>Get crop-based fertilizer recommendations.</p>
+      </div>
+
+      <div class="feature-box fade-up" onclick="location.href='features/community.html'">
+        <img src="community.png" class="feature-icon" />
+        <h3>Farmer Community</h3>
+        <p>Connect and learn with other farmers.</p>
+      </div>
+
+    </div>
+    <!-- AI Feedback Form -->
+    <div class="feature-box" onclick="location.href='ai_form/form.html'">
+    <img src="fertilizer.png" alt="AI Fertilizer Advisor" class="feature-icon">
+    <h3>AI Fertilizer Advisor</h3>
+    <p>Get smart, personalized fertilizer planning using AI.</p>
+  </div>
+
+  </section>
+
+</body>
+</html>
